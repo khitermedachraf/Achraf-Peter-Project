@@ -1,0 +1,20 @@
+#nav-bar{
+    position: fixed;
+    top: 0;
+    
+}
+
+@media (max-width: 600px) {
+    .header{
+    display: none;
+    }
+}
+
+#img{
+    display: flex;
+    justify-content: center;
+}
+
+#top{
+    margin-top: 2em;
+}
