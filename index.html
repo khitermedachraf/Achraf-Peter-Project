@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,41 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <title>Document</title>
 </head>
+<style>
+    #nav-bar {
+        position: fixed;
+        top: 0;
+    }
+    
+    @media (max-width: 600px) {
+        .header {
+            display: none;
+        }
+    }
+    
+    #img {
+        display: flex;
+        justify-content: center;
+    }
+    
+    #top {
+        margin-top: 2em;
+    }
+</style>
+
 <body>
     <header id="header">
         <div id="top">
             <img src="https://daqiantimes.com/wp-content/uploads/2018/10/Logo-Design-.jpg" alt="" id="header-img">
         </div>
         <nav id="nav-bar">
-           <a href="#top" class="nav-link">
+            <a href="#top" class="nav-link">
                 Home 
            </a>
-           <a href="#top" class="nav-link">
+            <a href="#top" class="nav-link">
                 About
            </a>
-           <a href="#top" class="nav-link">
+            <a href="#top" class="nav-link">
                Contact
            </a>
         </nav>
@@ -33,10 +56,11 @@
 
     <div>
         <form action="https://www.freecodecamp.com/email-submit" id="form">
-            <input type="email"  id="email" placeholder="Enter your email" required>
+            <input type="email" id="email" placeholder="Enter your email" required>
             <input type="submit" value="submit" id="submit">
         </form>
     </div>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>
