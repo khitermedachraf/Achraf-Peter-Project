@@ -1,0 +1,30 @@
+#header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-family: 'Exo 2', sans-serif;
+    padding: 1em;
+}
+
+main {
+    margin-top: 250px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: right;
+}
+
+li {
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+}

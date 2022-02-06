@@ -5,62 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Product Landing Page</title>
 </head>
-<style>
-    #nav-bar {
-        position: fixed;
-        top: 0;
-    }
-    
-    @media (max-width: 600px) {
-        .header {
-            display: none;
-        }
-    }
-    
-    #img {
-        display: flex;
-        justify-content: center;
-    }
-    
-    #top {
-        margin-top: 2em;
-    }
-</style>
 
 <body>
     <header id="header">
-        <div id="top">
-            <img src="https://daqiantimes.com/wp-content/uploads/2018/10/Logo-Design-.jpg" alt="" id="header-img">
-        </div>
+        <img id="header-img"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+            alt="My company logo">
         <nav id="nav-bar">
-            <a href="#top" class="nav-link">
-                Home 
-           </a>
-            <a href="#top" class="nav-link">
-                About
-           </a>
-            <a href="#top" class="nav-link">
-               Contact
-           </a>
+            <ul>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#howItWorks" class=" nav-link ">How It Works</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+            </ul>
         </nav>
     </header>
-    <div>
-        <video id="video" controls preload="metadata">
-            <track label="English" kind="captions" srclang="en" src="" default>
-            <source src="" type="video/mp4">
-        </video>
-    </div>
+    <main>
+        <section id="getStarted">
+            <form id="form" action="https://www.freecodecamp.com/email-submit)">
+                <input id="email" type="email" name="email" placeholder=" Enter your email adress" required>
+                <input id="submit" type="submit" value="Get Started">
+            </form>
+        </section>
+        <section id="features"></section>
+        <section id="howItWorks">
+            <iframe id="video" height="315" src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc" frameborder="0"
+                allowfullscreen></iframe>
+        </section>
+        <section id="pricing"></section>
 
-    <div>
-        <form action="https://www.freecodecamp.com/email-submit" id="form">
-            <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            <input type="submit" value="submit" id="submit">
-        </form>
-    </div>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    </main>
+    <script src=" https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js "></script>
 </body>
 
 </html>
