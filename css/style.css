@@ -154,3 +154,15 @@ main {
     width: 80vw;
     padding: 5px;
 }
+
+#howItWorks {
+    margin-top: 10%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+#howItWorks>iframe {
+    height: 350px;
+    width: 80%;
+}
