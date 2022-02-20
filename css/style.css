@@ -215,6 +215,13 @@ main {
     padding: 5px 0;
 }
 
+footer {
+    background-color: #ddd;
+    margin: auto;
+    height: 70px;
+    width: 90%;
+}
+
 @media (max-width: 780px) {
     #pricing {
         flex-direction: column;
@@ -227,4 +234,46 @@ main {
         margin: 0;
         margin-bottom: 20px;
     }
+
+    footer {
+        width: 100%;
+    }
+}
+
+footer li {
+    list-style: none;
+    display: inline-block;
+    padding-right: 5px;
+    white-space: nowrap;
+
+}
+
+/* Header */
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 1px 8px #ddd;
+}
+
+footer a {
+    text-decoration: none;
+    color: #555;
+    transition: all 0.3s ease 0s;
+}
+
+footer a:hover {
+    color: rgb(134, 44, 2);
+}
+
+footer p {
+    color: #444;
+    font-size: small;
+    text-align: left;
+    margin-right: 10px;
+    line-height: 1.6;
+}
+
+footer ul {
+    text-align: center;
 }
